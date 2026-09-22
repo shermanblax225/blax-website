@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blax.com.my/sitemap.xml
