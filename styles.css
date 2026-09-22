@@ -43,3 +43,26 @@ section{padding:120px 0}
  .signature-wa-main{top:43%;left:0;width:25%;height:7%}
  .about-v3 .about-visual{min-height:360px}
 }
+
+/* BLAX V4 — same signature background with real clickable website UI */
+.v4-header{position:absolute;top:0;left:0;right:0;z-index:100;background:linear-gradient(180deg,rgba(0,0,0,.92),rgba(0,0,0,.60),transparent)}
+.v4-nav{height:118px;width:100%;padding:0 4vw;display:flex;align-items:center;gap:28px}
+.v4-brand{margin-right:auto;display:block;position:relative;z-index:3}
+.v4-brand img{display:block;width:245px;height:92px;object-fit:cover;object-position:center}
+.v4-links{display:flex;align-items:center;gap:clamp(16px,1.45vw,30px);font-size:15px;white-space:nowrap}
+.v4-links a{color:#fff;transition:.2s}.v4-links a:hover{color:#f0d28b}
+.v4-top-wa{border:1px solid #d9b663;color:#f0d28b;border-radius:999px;padding:14px 22px;white-space:nowrap}
+.v4-hero{position:relative;min-height:100vh;padding:0;overflow:hidden;background:#030303}
+.v4-bg{position:absolute;inset:0;background-image:url("assets/blax-signature-hero.png");background-size:cover;background-position:center top}
+.v4-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.80) 31%,rgba(0,0,0,.28) 58%,rgba(0,0,0,.08) 100%)}
+.v4-copy{position:relative;z-index:5;width:min(920px,58vw);padding-top:clamp(245px,26vh,330px);margin-left:5vw}
+.v4-copy .eyebrow{font-size:14px;letter-spacing:.34em}
+.v4-copy h1{font-size:clamp(68px,5.8vw,108px);line-height:.98;margin:25px 0 28px;color:#f7f4ed;text-shadow:0 3px 22px rgba(0,0,0,.65)}
+.v4-copy h1 span{color:#f0d28b}
+.v4-copy p{max-width:800px;color:#eee;font-size:clamp(18px,1.2vw,22px);line-height:1.55;text-shadow:0 2px 12px #000}
+.v4-actions{display:flex;gap:16px;margin-top:34px}
+.v4-primary,.v4-secondary{border-radius:999px;padding:16px 26px;font-weight:700}
+.v4-primary{background:linear-gradient(135deg,#f0d28b,#d7ad55);color:#111}
+.v4-secondary{border:1px solid #d9b663;color:#fff;background:rgba(0,0,0,.38)}
+@media(max-width:1150px){.v4-links{display:none}.v4-copy{width:78vw}.v4-brand img{width:190px;height:72px}}
+@media(max-width:700px){.v4-nav{height:90px}.v4-brand img{width:160px;height:60px}.v4-top-wa{font-size:12px;padding:10px 13px}.v4-bg{background-position:62% top}.v4-shade{background:rgba(0,0,0,.62)}.v4-copy{width:90vw;margin-left:5vw;padding-top:190px}.v4-copy h1{font-size:48px}.v4-actions{flex-direction:column;align-items:flex-start}}
