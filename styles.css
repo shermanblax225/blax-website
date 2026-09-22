@@ -130,3 +130,68 @@ section{padding:120px 0}
 .v7-btn{display:inline-block;margin-top:28px;padding:17px 28px;border-radius:999px;background:linear-gradient(135deg,#f0d28b,#d7ad55);color:#111!important;font-weight:800}
 @media(max-width:1000px){.v7-photo{height:430px!important}.v7-grid.three,.v7-grid.fleet,.v7-process{grid-template-columns:1fr 1fr}.v7-highlight{grid-template-columns:1fr}}
 @media(max-width:650px){.v7-photo{height:300px!important}.v7-grid.three,.v7-grid.fleet,.v7-process{grid-template-columns:1fr}.v7-body{padding:60px 0}.v7-wrap .lead{font-size:18px}}
+
+/* V7.1 DISPLAY FIX */
+/* Homepage: force the original chauffeur/car scene to render as a real image. */
+.live-photo{position:absolute!important;inset:0!important;background:none!important;transform:none!important;overflow:hidden!important}
+.live-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+.live-overlay{background:linear-gradient(90deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.80) 30%,rgba(0,0,0,.25) 60%,rgba(0,0,0,.08) 100%)!important}
+
+/* Interior premium visuals: show the COMPLETE approved image, never crop it. */
+.v7-photo{height:auto!important;min-height:0!important;overflow:visible!important;background:#050505!important}
+.v7-photo img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+/* Remove older media rules that could force a cropped fixed-height image. */
+@media(max-width:1000px){.v7-photo{height:auto!important}}
+@media(max-width:650px){.v7-photo{height:auto!important}}
+
+/* V7.2 exact visual correction */
+html,body{margin:0;background:#000}
+.v72-home{overflow-x:hidden}
+.v72-signature{position:relative;width:100%;padding:0!important;margin:0;background:#000}
+.v72-signature>img{display:block;width:100%;height:auto;max-width:none;margin:0}
+.v72-signature .hot{position:absolute;display:block;z-index:50;background:transparent}
+
+/* clickable regions mapped to the approved 2048x1152 signature image */
+.v72-signature .home{left:23.8%;top:2.4%;width:4.2%;height:5.2%}
+.v72-signature .airport{left:28.7%;top:2.4%;width:8.1%;height:5.2%}
+.v72-signature .chauffeur{left:37.1%;top:2.4%;width:9.5%;height:5.2%}
+.v72-signature .corporate{left:47.0%;top:2.4%;width:6.7%;height:5.2%}
+.v72-signature .fleet{left:54.1%;top:2.4%;width:5.4%;height:5.2%}
+.v72-signature .contact{left:59.9%;top:2.4%;width:5.2%;height:5.2%}
+.v72-signature .wa-top{left:80.8%;top:1.4%;width:15.2%;height:6.5%}
+.v72-signature .wa-main{left:4.7%;top:43.3%;width:16.6%;height:6.1%}
+.v72-signature .fleet-main{left:22.0%;top:43.3%;width:12.2%;height:6.1%}
+.v72-signature .airport-card{left:5.0%;top:80.8%;width:19.8%;height:16.5%}
+.v72-signature .chauffeur-card{left:25.3%;top:80.8%;width:23.5%;height:16.5%}
+.v72-signature .corporate-card{left:49.0%;top:80.8%;width:23.5%;height:16.5%}
+.v72-signature .private-card{left:72.8%;top:80.8%;width:23.5%;height:16.5%}
+
+/* Interior pages: no blank band; display the ENTIRE approved artwork. */
+.v7-photo{
+  padding:0!important;
+  margin:0!important;
+  height:auto!important;
+  min-height:0!important;
+  overflow:visible!important;
+  line-height:0!important;
+  background:#000!important;
+}
+.v7-photo img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:0!important;
+}
+.v6-header{margin:0!important}
+main{margin:0!important;padding:0!important}
