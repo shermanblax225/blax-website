@@ -24,3 +24,22 @@ section{padding:120px 0}
 .cta{min-height:620px}
 .cta h2{font-size:clamp(58px,5vw,90px)}
 @media(max-width:900px){.brand img{width:175px;height:66px}.hero-content{max-width:100%}h1{font-size:48px}.photo{height:420px}}
+
+/* V3 signature hero — exact approved visual */
+.signature-hero{position:relative;width:100%;padding:0;background:#000;overflow:hidden}
+.signature-hero>img{display:block;width:100%;height:auto;min-height:100vh;object-fit:cover;object-position:top center}
+.signature-wa{position:absolute;display:block;z-index:5;border-radius:999px}
+.signature-wa-top{top:1.7%;right:4.1%;width:14.5%;height:6.4%}
+.signature-wa-main{top:43.0%;left:4.7%;width:16.7%;height:7.0%}
+.seo-hero-copy{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.about-v3{padding:105px 0}
+.about-v3 .about-grid{align-items:center}
+.about-v3 .about-visual{min-height:520px;text-align:center}
+.about-visual span{display:block;color:#d9b663;letter-spacing:.3em;font-size:13px;margin-bottom:22px}
+.about-visual strong{display:block;font-family:Georgia,serif;font-size:42px;font-weight:400;line-height:1.15;color:#f7f4ed}
+@media(max-width:900px){
+ .signature-hero>img{min-height:0;width:150%;max-width:none;transform:translateX(-17%)}
+ .signature-wa-top{top:1.7%;right:0;width:22%;height:6%}
+ .signature-wa-main{top:43%;left:0;width:25%;height:7%}
+ .about-v3 .about-visual{min-height:360px}
+}
