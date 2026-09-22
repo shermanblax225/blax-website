@@ -1,1 +1,26 @@
 *{box-sizing:border-box}body{margin:0;background:#050505;color:#f5f3ee;font-family:Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}header{position:fixed;z-index:20;inset:0 0 auto;background:linear-gradient(#050505f5,#050505b0,transparent)}.nav{height:86px;display:flex;align-items:center;gap:25px}.brand{margin-right:auto}.brand img{width:150px;height:58px;object-fit:cover}nav{display:flex;gap:23px;font-size:14px}.book,.btn{border:1px solid #d6b36a;border-radius:30px;padding:12px 20px}.book{color:#f0d392}.primary{background:#e6c47b;color:#111;font-weight:bold}.hero{min-height:760px;display:flex;align-items:center;position:relative;background:#070707}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 0%,#000d 36%,#0004 72%),url('assets/hero-concept.png') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:160px;background:linear-gradient(transparent,#050505)}.hero-content{position:relative;z-index:2;max-width:730px;padding-top:80px}.eyebrow{color:#d6b36a;letter-spacing:.3em;text-transform:uppercase;font-size:12px}h1,h2,h3{font-family:Georgia,serif;font-weight:400}h1{font-size:68px;line-height:1.03;margin:18px 0}.gold{color:#edcf8c}.hero p{font-size:19px;color:#ddd}.actions{display:flex;gap:14px;margin:30px 0 42px}.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;font-size:13px}.trust strong{display:block}.trust span,p{color:#b7b4ae}section{padding:90px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 50px}.section-head h2{font-size:45px;margin:10px}.services{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #292929}.service{padding:35px 25px;border-right:1px solid #292929}.service:last-child{border:0}.service h3{font-size:24px}.icon,.learn{color:#e3c27b}.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.photo{height:450px;border:1px solid #302919;background:radial-gradient(circle at 60% 35%,#423318,#0a0a0a 60%);display:grid;place-items:center;color:#b89b60;letter-spacing:.18em;font-size:12px}.copy h2{font-size:46px;line-height:1.1}.fleet{background:#090909}.fleet-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.car{border:1px solid #292929;padding:20px}.car-img{height:135px;background:#0c0c0c;display:grid;place-items:center;color:#7d6b47;font-size:11px;margin:-20px -20px 18px}.profile{background:linear-gradient(120deg,#090909,#151109)}.profile-card{border:1px solid #302919;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px}.profile-card h2{font-size:44px}.fact{border-top:1px solid #292929;padding:15px 0}.fact span{display:block;color:#aaa;font-size:12px}.cta{text-align:center;padding:105px 0;background:radial-gradient(circle,#251c0d,#070707 55%)}.cta h2{font-size:50px}.page-hero{padding:180px 0 90px;background:radial-gradient(circle at 75% 30%,#30230e,#080808 45%)}.page-hero h1{font-size:58px}.content{max-width:850px}.content h2{font-size:36px}footer{padding:42px 0;border-top:1px solid #292929;color:#aaa;font-size:13px}.foot{display:flex;justify-content:space-between}@media(max-width:900px){nav{display:none}h1{font-size:48px}.trust,.services,.fleet-grid{grid-template-columns:1fr 1fr}.split,.profile-card{grid-template-columns:1fr}}@media(max-width:560px){h1{font-size:40px}.trust,.services,.fleet-grid{grid-template-columns:1fr}.actions{flex-direction:column;align-items:flex-start}.service{border-right:0;border-bottom:1px solid #292929}}
+/* BLAX V2 full-screen premium overrides */
+.wrap{width:100%;max-width:none;padding-left:5vw;padding-right:5vw}
+.nav{height:118px}
+.brand img{width:245px;height:92px}
+.hero{min-height:100vh}
+.hero:before{background:radial-gradient(circle at 78% 42%,#38280f 0,#11100d 28%,#050505 68%)}
+.hero-content{max-width:1050px;padding-top:115px}
+h1{font-size:clamp(68px,6vw,108px);line-height:.98}
+.hero p{font-size:21px;max-width:800px}
+section{padding:120px 0}
+.section-head{max-width:1000px}
+.section-head h2{font-size:clamp(50px,4vw,72px)}
+.services{width:100%}
+.service{padding:52px 38px;min-height:330px}
+.split{gap:7vw}
+.photo{height:650px}
+.copy h2{font-size:clamp(52px,4.5vw,80px)}
+.fleet-grid{gap:24px}
+.car{min-height:360px}
+.car-img{height:220px}
+.profile-card{padding:70px;gap:70px}
+.profile-card h2{font-size:clamp(52px,4vw,74px)}
+.cta{min-height:620px}
+.cta h2{font-size:clamp(58px,5vw,90px)}
+@media(max-width:900px){.brand img{width:175px;height:66px}.hero-content{max-width:100%}h1{font-size:48px}.photo{height:420px}}
