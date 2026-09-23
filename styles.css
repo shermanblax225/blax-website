@@ -51,3 +51,24 @@ a{color:inherit}
  .cards{grid-template-columns:1fr;gap:12px;margin-top:28px}.card{min-height:0;padding:20px}
 }
 @media(max-width:390px){.header-inner{grid-template-columns:1fr}.brand,.header-cta{justify-self:center}.main-nav{grid-column:1}.mobile-service-links{grid-template-columns:1fr}}
+
+
+/* FINAL HOME FIX: home.jpg already includes the complete BLAX header/navigation.
+   Hide only the duplicate HTML header on the Home page. */
+.page-home > .site-header {
+  display: none !important;
+}
+
+/* Home artwork fills the page naturally with no extra line/band. */
+.page-home .art-home {
+  margin-top: 0 !important;
+  border-top: 0 !important;
+}
+
+/* On mobile the artwork header is visual only, so provide the real touch actions
+   immediately below the artwork; all other pages retain their responsive header. */
+@media (max-width:700px) {
+  .page-home > .site-header {
+    display: none !important;
+  }
+}
