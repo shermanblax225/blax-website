@@ -15,3 +15,212 @@
 .contact-wa{left:2.5%;top:56%;width:23%;height:11%}
 .mobile-actions,.mobile-service-links{display:none!important}
 @media(max-width:700px){.desktop-actions{display:block}.desktop-actions .art-action{min-height:44px}.page-home .art-stage:before{content:'';position:absolute;top:0;left:0;right:0;height:9.5%;z-index:1;background:#080808;pointer-events:none}}
+
+
+/* =========================================================
+   BLAX FINAL RESPONSIVE HEADER + MOBILE SYSTEM
+   23 Sep 2026
+   ========================================================= */
+
+/* DESKTOP: header visually merges into hero instead of looking attached */
+@media (min-width:701px){
+  .site-header{
+    position:absolute;
+    top:0;left:0;width:100%;
+    z-index:20;
+    background:linear-gradient(to bottom,rgba(5,5,5,.96),rgba(5,5,5,.78),rgba(5,5,5,.20));
+    border-bottom:1px solid rgba(201,166,110,.28);
+  }
+  .header-inner{min-height:82px}
+  .brand img{
+    width:176px;height:64px;
+    object-fit:cover;
+    object-position:center 52%;
+    background:#050505;
+  }
+
+  /* Every hero begins behind the transparent header */
+  .art-stage{position:relative}
+
+  /* HOME artwork itself contains an old header. Crop that embedded strip. */
+  .page-home .art-home{
+    overflow:hidden;
+    aspect-ratio:1600/802;
+  }
+  .page-home .art-home>img{
+    width:100%;
+    height:auto;
+    transform:translateY(-8.9%);
+    transform-origin:top center;
+  }
+
+  /* Keep invisible desktop click targets aligned after home crop */
+  .page-home .art-home .desktop-actions{
+    top:-8.9%;
+    bottom:auto;
+    height:108.9%;
+  }
+}
+
+/* MOBILE / PHONE */
+@media (max-width:700px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+
+  .site-header,.page-home .site-header{
+    position:relative;
+    top:auto;left:auto;
+    width:100%;
+    background:#070707;
+    border-bottom:1px solid #3c3226;
+  }
+
+  .header-inner{
+    width:100%;
+    padding:10px 14px 8px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:8px 12px;
+    align-items:center;
+  }
+
+  .brand{min-width:0}
+  .brand img{
+    width:126px;height:52px;
+    object-fit:cover;
+    object-position:center 52%;
+    background:#070707;
+  }
+
+  .header-cta{
+    justify-self:end;
+    font-size:11px;
+    padding:8px 11px;
+    border-radius:24px;
+  }
+
+  .main-nav{
+    grid-column:1/-1;
+    order:initial;
+    width:calc(100% + 28px);
+    margin-left:-14px;
+    padding:4px 14px 9px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    gap:19px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .main-nav::-webkit-scrollbar{display:none}
+  .main-nav a{
+    flex:0 0 auto;
+    font-size:12px;
+    padding:6px 0;
+  }
+
+  .art-stage{
+    width:100%;
+    overflow:hidden;
+    background:#080808;
+  }
+  .art-stage>img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+  }
+
+  /* Remove the old embedded navigation from Home on phones too */
+  .page-home .art-home{
+    aspect-ratio:1600/802;
+    overflow:hidden;
+  }
+  .page-home .art-home>img{
+    width:100%;
+    height:auto;
+    transform:translateY(-8.9%);
+    transform-origin:top center;
+  }
+  .page-home .art-stage:before{
+    content:none!important;
+    display:none!important;
+  }
+
+  /* Artwork buttons are too small on phones: use real touch buttons below */
+  .desktop-actions{display:none!important}
+  .mobile-actions{
+    display:flex!important;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    gap:10px;
+    padding:15px 16px 18px;
+    background:#0d0c0b;
+    border-top:1px solid #342a20;
+  }
+  .mobile-actions .art-action{
+    position:static!important;
+    display:flex!important;
+    width:100%;
+    min-height:48px;
+    padding:12px 16px;
+    border-radius:28px;
+    font-size:14px!important;
+    text-indent:0!important;
+    white-space:normal;
+    text-align:center;
+    color:#f0d29e!important;
+    background:#121110!important;
+    border:1px solid #e8bf7e!important;
+    box-shadow:none!important;
+  }
+  .mobile-actions .art-action.primary{
+    background:#f0c981!important;
+    color:#1b1610!important;
+    border-color:#f0c981!important;
+  }
+  .mobile-actions .art-action span{display:inline!important}
+
+  .mobile-service-links{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:0 16px 20px;
+    background:#0d0c0b;
+  }
+  .mobile-service-links a{
+    display:flex;
+    align-items:center;
+    min-height:52px;
+    padding:12px;
+    color:#f0ce93;
+    background:#1d1b18;
+    border:1px solid #4c3d2a;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.35;
+  }
+
+  .wrap{width:100%;padding-left:18px;padding-right:18px}
+  .section{padding-top:42px;padding-bottom:48px}
+  .eyebrow{font-size:11px;letter-spacing:.20em}
+  .section h2{
+    font-size:clamp(29px,9vw,42px);
+    line-height:1.08;
+    margin:10px 0 16px;
+    overflow-wrap:anywhere;
+  }
+  .lead{font-size:16px;line-height:1.65}
+  .cards{grid-template-columns:1fr;gap:12px;margin-top:28px}
+  .card{min-height:0;padding:20px}
+  .card h3{font-size:20px;margin-bottom:10px}
+  .footer-inner{display:block}
+}
+
+@media(max-width:390px){
+  .header-inner{grid-template-columns:1fr}
+  .brand,.header-cta{justify-self:center}
+  .main-nav{grid-column:1}
+  .mobile-service-links{grid-template-columns:1fr}
+}
