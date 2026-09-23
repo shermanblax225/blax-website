@@ -72,3 +72,27 @@ a{color:inherit}
     display: none !important;
   }
 }
+
+
+/* FINAL FUNCTION FIX — invisible real links over the Home artwork navigation */
+.page-home .art-home .desktop-actions{display:block!important;position:absolute;inset:0;z-index:10;pointer-events:none}
+.page-home .art-home .home-nav-hit{
+ position:absolute;display:block;z-index:20;pointer-events:auto;
+ background:transparent!important;border:0!important;box-shadow:none!important;
+ color:transparent!important;font-size:0!important;text-indent:-9999px;overflow:hidden;
+}
+/* Coordinates match the visible navigation baked into the approved home artwork */
+.page-home .nav-home{left:23.5%;top:1.2%;width:5.5%;height:7%}
+.page-home .nav-airport{left:29.1%;top:1.2%;width:9.7%;height:7%}
+.page-home .nav-chauffeur{left:39%;top:1.2%;width:10.8%;height:7%}
+.page-home .nav-corporate{left:49.9%;top:1.2%;width:7.4%;height:7%}
+.page-home .nav-fleet{left:57.4%;top:1.2%;width:6.5%;height:7%}
+.page-home .nav-company{left:64%;top:1.2%;width:10.5%;height:7%}
+.page-home .nav-contact{left:74.6%;top:1.2%;width:6%;height:7%}
+.page-home .nav-whatsapp{left:81.2%;top:.8%;width:15.8%;height:8%}
+
+/* Mobile: artwork nav is too small to tap; show the real HTML header instead. */
+@media(max-width:700px){
+ .page-home > .site-header{display:block!important}
+ .page-home .art-home .home-nav-hit{display:none!important}
+}
