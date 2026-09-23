@@ -1,0 +1,158 @@
+*{box-sizing:border-box}body{margin:0;background:#10100f;color:#f7f3eb;font-family:Arial,Helvetica,sans-serif;line-height:1.6}html{scroll-behavior:smooth}a{color:inherit}a:focus-visible{outline:3px solid #f1ca89;outline-offset:3px}.skip{position:absolute;top:-100px;left:12px;z-index:30;background:#fff;color:#111;padding:8px}.skip:focus{top:10px}.site-header{background:#080808;border-bottom:1px solid #40382b;position:relative;z-index:5}.header-inner{max-width:1540px;margin:auto;padding:12px 30px;display:flex;gap:25px;align-items:center;justify-content:space-between}.brand{display:block;flex:0 0 auto}.brand img{display:block;width:176px;height:74px;object-fit:cover;object-position:center 52%}.main-nav{display:flex;gap:clamp(8px,1.3vw,25px);align-items:center;flex-wrap:wrap;justify-content:center}.main-nav a{text-decoration:none;font-size:13px;white-space:nowrap;color:#e6e1d8;padding:7px 0}.main-nav a:hover,.main-nav a[aria-current=page]{color:#e6bd7a;border-bottom:1px solid #e6bd7a}.header-cta{border:1px solid #c9a66e;color:#f1d2a0;padding:9px 15px;border-radius:25px;text-decoration:none;white-space:nowrap;font-size:13px}.header-cta:hover,.art-action:hover,.button:hover{filter:brightness(1.15)}.page-home .site-header{position:absolute;top:0;left:0;width:100%;background:#080808ee}.art-stage{position:relative;width:100%;background:#0c0b0a}.art-stage>img{display:block;width:100%;height:auto;max-width:none}.desktop-actions{position:absolute;inset:0;pointer-events:none}.art-action{position:absolute;pointer-events:auto;display:inline-flex;align-items:center;justify-content:center;gap:.7em;text-decoration:none;font-weight:600;white-space:nowrap;line-height:1.2;font-size:clamp(12px,1.15vw,20px);padding:.7em 1.25em;border-radius:100px;border:1px solid #e8bf7e;color:#e8bf7e;background:#13110f;box-shadow:0 0 0 2px #15110f}.art-action.primary{background:#f0c981;color:#1b1610;border-color:#f0c981}.art-action.secondary{background:#121110;color:#f0d29e}.art-action.service{background:#121110;color:#e8bd7a;box-shadow:none;border:0;padding:.25em .5em;font-size:clamp(10px,.95vw,17px)}.home-wa{left:4.8%;top:46.3%}.home-fleet{left:22.6%;top:46.3%}.service-airport{left:10.3%;top:93.9%}.service-chauffeur{left:34.4%;top:93.9%}.service-corporate{left:59.3%;top:93.9%}.service-private{left:84.1%;top:93.9%}.airport-wa{left:4%;top:71.5%}.chauffeur-wa{left:4%;top:84%}.chauffeur-fleet{left:20.3%;top:84%}.corporate-more{left:4%;top:70.2%}.company-more{left:3.5%;top:68.2%}.contact-wa{left:4%;top:58.8%}.mobile-actions{display:none}.wrap{max-width:1320px;margin:auto;padding-left:30px;padding-right:30px}.section{padding-top:78px;padding-bottom:85px;border-bottom:1px solid #352e23}.eyebrow{letter-spacing:.27em;color:#e5bd7f;font-size:13px;font-weight:700}.section h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,3.7vw,58px);font-weight:400;line-height:1.1;margin:14px 0 20px}.lead{max-width:900px;color:#d0cbc3;font-size:18px}.section .button{margin-top:24px}.button{display:inline-flex;gap:12px;border:1px solid #e8bf7e;border-radius:30px;background:#e8bf7e;color:#1a140e;text-decoration:none;padding:12px 22px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:40px}.card{background:#1d1b18;border:1px solid #43392b;padding:24px;min-height:170px}.card h3{font-family:Georgia,serif;font-size:22px;line-height:1.2;font-weight:400;color:#f0cc96;margin:0 0 16px}.card p{color:#d0cbc3;margin:0}.site-footer{background:#080808;padding:40px 0;color:#bbb4a8}.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center}.site-footer img{width:140px;height:59px;object-fit:cover;object-position:center 52%;display:block}.site-footer p{margin:8px 0;max-width:460px}.site-footer a{color:#e5bd7f}@media(max-width:1100px){.header-inner{flex-wrap:wrap;justify-content:center}.main-nav{order:3;width:100%}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.header-inner{gap:10px;padding:12px 16px}.brand img{width:145px;height:62px}.header-cta{font-size:12px}.main-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:5px 2px 10px;gap:18px}.main-nav a{font-size:13px}.page-home .site-header{position:relative}.art-stage{width:100%}.art-stage>img{width:100%;height:auto}.desktop-actions{display:none}.mobile-actions{display:flex;flex-wrap:wrap;gap:12px;padding:17px 22px 25px;background:#141210}.mobile-actions .art-action{position:static;min-height:44px;font-size:14px;padding:11px 18px}.wrap{padding-left:22px;padding-right:22px}.section{padding-top:54px;padding-bottom:60px}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:0}.footer-inner{display:block}}
+
+.mobile-service-links{display:none}@media(max-width:700px){.mobile-service-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 22px 24px}.mobile-service-links a{color:#f0ce93;background:#1d1b18;border:1px solid #4c3d2a;padding:12px;text-decoration:none;font-size:13px;min-height:44px}}
+
+/* The approved artwork already draws the buttons. These real links make those exact visual buttons interactive without drawing a second button. */
+.desktop-actions{display:block;pointer-events:none}
+.desktop-actions .art-action{display:block;position:absolute;z-index:2;pointer-events:auto;cursor:pointer;overflow:hidden;text-indent:-9999px;white-space:nowrap;font-size:0;padding:0;border:0;border-radius:0;background:transparent;color:transparent;box-shadow:none;filter:none}
+.desktop-actions .art-action:hover{filter:none}.desktop-actions .art-action span{display:none}
+.home-wa{left:4.2%;top:45.8%;width:18%;height:8.5%}.home-fleet{left:22%;top:45.8%;width:15%;height:8.5%}
+.service-airport{left:9%;top:92%;width:13%;height:7%}.service-chauffeur{left:33%;top:92%;width:13%;height:7%}.service-corporate{left:58%;top:92%;width:13%;height:7%}.service-private{left:82%;top:92%;width:13%;height:7%}
+.airport-wa{left:2.5%;top:69%;width:21%;height:11%}
+.chauffeur-wa{left:2.5%;top:82%;width:18%;height:11%}.chauffeur-fleet{left:20%;top:82%;width:17%;height:11%}
+.corporate-more{left:2.5%;top:68%;width:30%;height:11%}
+.company-more{left:2.5%;top:66%;width:22%;height:11%}
+.contact-wa{left:2.5%;top:56%;width:23%;height:11%}
+.mobile-actions,.mobile-service-links{display:none!important}
+@media(max-width:700px){.desktop-actions{display:block}.desktop-actions .art-action{min-height:44px}.page-home .art-stage:before{content:'';position:absolute;top:0;left:0;right:0;height:9.5%;z-index:1;background:#080808;pointer-events:none}}
+
+
+/* =========================================================
+   BLAX STABLE HEADER / ALIGNMENT FIX
+   ========================================================= */
+
+/* DESKTOP — keep header in its own row so it never covers hero artwork */
+@media (min-width:701px){
+  .site-header,
+  .page-home .site-header{
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    width:100%;
+    background:#080808 !important;
+    border-bottom:0 !important;
+  }
+  .header-inner{
+    min-height:82px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+  .brand img{
+    width:176px;
+    height:64px;
+    object-fit:cover;
+    object-position:center 52%;
+  }
+
+  /* Home image contains an old header inside the artwork.
+     Crop ONLY that old strip, while leaving the real header above it. */
+  .page-home .art-home{
+    overflow:hidden;
+    aspect-ratio:1600/808;
+  }
+  .page-home .art-home>img{
+    width:100%;
+    height:auto;
+    transform:translateY(-8.4%);
+    transform-origin:top center;
+  }
+  .page-home .art-home .desktop-actions{
+    top:-8.4%;
+    bottom:auto;
+    height:108.4%;
+  }
+}
+
+/* PHONE / TABLET */
+@media (max-width:700px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .site-header,.page-home .site-header{
+    position:relative !important;
+    width:100%;
+    background:#080808 !important;
+    border-bottom:0 !important;
+  }
+  .header-inner{
+    padding:10px 14px 8px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:8px 12px;
+    align-items:center;
+  }
+  .brand img{width:126px;height:52px}
+  .header-cta{justify-self:end;font-size:11px;padding:8px 11px}
+  .main-nav{
+    grid-column:1/-1;
+    width:calc(100% + 28px);
+    margin-left:-14px;
+    padding:4px 14px 9px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    gap:19px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .main-nav::-webkit-scrollbar{display:none}
+  .main-nav a{flex:0 0 auto;font-size:12px}
+
+  .art-stage{width:100%;overflow:hidden}
+  .art-stage>img{display:block;width:100%;height:auto;max-width:100%}
+
+  .page-home .art-home{overflow:hidden;aspect-ratio:1600/808}
+  .page-home .art-home>img{
+    width:100%;
+    height:auto;
+    transform:translateY(-8.4%);
+    transform-origin:top center;
+  }
+  .page-home .art-stage:before{content:none!important;display:none!important}
+
+  .desktop-actions{display:none!important}
+  .mobile-actions{
+    display:flex!important;
+    flex-direction:column;
+    gap:10px;
+    padding:15px 16px 18px;
+    background:#0d0c0b;
+    border-top:0;
+  }
+  .mobile-actions .art-action{
+    position:static!important;
+    display:flex!important;
+    width:100%;
+    min-height:48px;
+    padding:12px 16px;
+    border-radius:28px;
+    font-size:14px!important;
+    text-indent:0!important;
+    white-space:normal;
+    color:#f0d29e!important;
+    background:#121110!important;
+    border:1px solid #e8bf7e!important;
+    box-shadow:none!important;
+  }
+  .mobile-actions .art-action.primary{
+    background:#f0c981!important;
+    color:#1b1610!important;
+  }
+  .mobile-actions .art-action span{display:inline!important}
+  .mobile-service-links{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:0 16px 20px;
+  }
+  .wrap{padding-left:18px;padding-right:18px}
+  .section{padding-top:42px;padding-bottom:48px}
+  .section h2{font-size:clamp(29px,9vw,42px);line-height:1.08}
+  .lead{font-size:16px}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .card{min-height:0}
+}
+@media(max-width:390px){
+  .header-inner{grid-template-columns:1fr}
+  .brand,.header-cta{justify-self:center}
+  .main-nav{grid-column:1}
+  .mobile-service-links{grid-template-columns:1fr}
+}
