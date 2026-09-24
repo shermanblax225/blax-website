@@ -115,3 +115,14 @@ a{color:inherit}
     display:none !important;
   }
 }
+
+/* 2026-09-24 REMOVE DUPLICATE BAKED-IN HOME HEADER */
+@media (min-width:701px){
+  .page-home .art-home{
+    margin-top:0 !important;
+    padding-top:0 !important;
+  }
+  .page-home .art-home > img{
+    margin-top:-82px !important;
+  }
+}
