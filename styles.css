@@ -96,3 +96,22 @@ a{color:inherit}
  .page-home > .site-header{display:block!important}
  .page-home .art-home .home-nav-hit{display:none!important}
 }
+
+/* 2026-09-24 FINAL DESKTOP NAV FIX
+   Use the real HTML navigation on desktop. The artwork's old baked-in
+   navigation is covered by the real opaque header. */
+@media (min-width:701px){
+  .page-home > .site-header{
+    display:block !important;
+    position:relative;
+    z-index:50;
+    background:#080808;
+  }
+  .page-home .art-home{
+    margin-top:-82px !important;
+    padding-top:82px;
+  }
+  .page-home .art-home .home-nav-hit{
+    display:none !important;
+  }
+}
