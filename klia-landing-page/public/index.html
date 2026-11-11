@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Private chauffeur transfers to and from KLIA with BLAX Mobility. Compare Toyota Camry, Toyota Vellfire and Hyundai Staria fares.">
+<title>BLAX Mobility | KLIA Chauffeur Transfers</title>
+<link rel="stylesheet" href="style.css">
+<script src="booking.js" defer></script>
+<script src="reviews.js" defer></script>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#" aria-label="BLAX Mobility home"><img src="logo.jpeg" alt="BLAX — Your Premium Rides. Anytime. Anywhere." width="650" height="250"></a>
+  <a class="button outline" href="https://wa.me/60189708896?text=I%20would%20like%20to%20book%20for%20an%20airport%20transfer.%0A%0ADate%3A%0ATime%3A%0AName%3A%0AAddress%3A%0APickup%20%28From%29%20%2F%20Dropoff%20%28To%29%20KLIA%3A">WhatsApp <span aria-hidden="true">↗</span></a>
+</header>
+<main>
+  <div class="wrap featured-reviews">
+    <div class="review-display" aria-label="Customer reviews">
+      <p class="eyebrow">FROM OUR PASSENGERS</p>
+      <div id="review-card">Loading reviews…</div>
+      <div class="review-controls" hidden>
+        <button type="button" data-review="prev" aria-label="Previous review">←</button>
+        <button type="button" data-review="toggle">Pause</button>
+        <button type="button" data-review="next" aria-label="Next review">→</button>
+      </div>
+    </div>
+  </div>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">KUALA LUMPUR INTERNATIONAL AIRPORT</p>
+      <h1>Private airport transfers to and from KLIA.</h1>
+      <p class="intro">Book a private ride to or from KLIA. Choose a one-way transfer or plan both legs with Go &amp; Back.</p>
+      <div class="hero-actions"><a class="button" href="#booking">Plan your transfer <span aria-hidden="true">↗</span></a><a class="button outline" href="#fares">View fleet &amp; fares</a></div>
+    </div>
+  </section>
+  <section class="fleet" id="fares">
+    <div class="wrap">
+      <p class="eyebrow">THE BLAX FLEET</p>
+      <h2>Choose your ride.</h2>
+      <p class="muted">One-way fares apply to either direction. Go &amp; Back covers both legs.</p>
+      <div class="cars">
+        <article>
+          <img class="car-photo" src="camry-blax.jpg" alt="Illustrative Toyota Camry" width="508" height="400">
+          <div class="car-info">
+          <p class="eyebrow">01 / SEDAN</p><h3>Toyota Camry</h3>
+          <p class="luggage">2–3 bags, depending on size</p>
+          <dl><div><dt>One way</dt><dd>RM160</dd></div><div><dt>Go &amp; Back</dt><dd>RM300</dd></div></dl>
+          <a class="button outline vehicle-enquiry" href="https://wa.me/60189708896?text=Hi%20BLAX%2C%20I%27d%20like%20to%20enquire%20about%20a%20Toyota%20Camry%20KLIA%20transfer.%20One%20way%3A%20RM160.%20Go%20%26%20Back%3A%20RM300.">Enquire about Camry <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article>
+          <img class="car-photo" src="vellfire-blax.jpg" alt="Illustrative Toyota Vellfire" width="508" height="400">
+          <div class="car-info">
+          <p class="eyebrow">02 / MPV</p><h3>Toyota Vellfire</h3>
+          <dl><div><dt>One way</dt><dd>RM250</dd></div><div><dt>Go &amp; Back</dt><dd>RM480</dd></div></dl>
+          <a class="button outline vehicle-enquiry" href="https://wa.me/60189708896?text=Hi%20BLAX%2C%20I%27d%20like%20to%20enquire%20about%20a%20Toyota%20Vellfire%20KLIA%20transfer.%20One%20way%3A%20RM250.%20Go%20%26%20Back%3A%20RM480.">Enquire about Vellfire <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article>
+          <img class="car-photo" src="staria-blax.jpg" alt="Illustrative Hyundai Staria" width="508" height="400">
+          <div class="car-info">
+          <p class="eyebrow">03 / MPV</p><h3>Hyundai Staria</h3>
+          <p class="luggage">For 4 or more bags</p>
+          <dl><div><dt>One way</dt><dd>RM250</dd></div><div><dt>Go &amp; Back</dt><dd>RM480</dd></div></dl>
+          <a class="button outline vehicle-enquiry" href="https://wa.me/60189708896?text=Hi%20BLAX%2C%20I%27d%20like%20to%20enquire%20about%20a%20Hyundai%20Staria%20KLIA%20transfer.%20One%20way%3A%20RM250.%20Go%20%26%20Back%3A%20RM480.">Enquire about Staria <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="luggage-note">Travelling with 4 or more bags? Enquire about the Toyota Alphard or Hyundai Staria. Share your bag sizes so we can confirm what fits.</p>
+      <p class="image-note">Vehicle images are illustrative.</p>
+    </div>
+  </section>
+  <section class="booking wrap" id="booking">
+    <div>
+      <p class="eyebrow">WHATSAPP BOOKING ENQUIRIES</p>
+      <h2>Plan your transfer.</h2>
+      <p class="muted">Choose your vehicle and share your trip details. Send the prepared enquiry in WhatsApp and BLAX will confirm availability and luggage fit.</p>
+      <a class="contact" href="https://wa.me/60189708896">018-970 8896</a>
+    </div>
+    <form class="booking-form" hidden>
+      <div class="form-grid">
+        <label>Vehicle <select name="vehicle" required></select></label>
+        <label>Trip <select name="trip"><option value="one">One way</option><option value="return">Go &amp; Back</option></select></label>
+        <label>Direction <select name="direction"><option>To KLIA</option><option>From KLIA</option></select></label>
+        <label>Pickup date &amp; time (Malaysia) <input type="datetime-local" name="pickupTime" required></label>
+        <label class="full return-field" hidden>Return pickup date &amp; time (Malaysia) <input type="datetime-local" name="returnTime" disabled></label>
+        <label>Pickup location <input name="pickup" placeholder="Address or terminal" maxlength="180" required></label>
+        <label>Drop-off location <input name="dropoff" placeholder="Address or terminal" maxlength="180" required></label>
+        <label>Passengers <input type="number" name="passengers" inputmode="numeric" min="1" required></label>
+        <label>Bags <input type="number" name="bags" inputmode="numeric" min="0" required></label>
+        <label class="full">Bag sizes or trip notes (optional) <textarea name="notes" rows="2" maxlength="400"></textarea></label>
+      </div>
+      <div class="fare-preview"><span>Listed fare</span><output aria-live="polite"></output></div>
+      <button class="button" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+    </form>
+    <noscript><a class="button" href="https://wa.me/60189708896">Enquire on WhatsApp</a></noscript>
+  </section>
+  <section class="booking wrap reviews" id="reviews">
+    <div>
+      <p class="eyebrow">CUSTOMER FEEDBACK</p>
+      <h2>Review your ride.</h2>
+      <p class="muted">Tell other travellers how your transfer went. Your rating, review and optional display name will appear publicly on this site.</p>
+    </div>
+    <div class="review-column">
+    <form class="booking-form review-form" hidden>
+      <div class="form-grid">
+        <label>Public display name (optional) <input name="reviewer" autocomplete="name" maxlength="80"></label>
+        <label>Rating <select name="rating" required>
+          <option value="">Choose a rating</option>
+          <option value="5">5 stars — Excellent</option>
+          <option value="4">4 stars — Good</option>
+          <option value="3">3 stars — Okay</option>
+          <option value="2">2 stars — Poor</option>
+          <option value="1">1 star — Very poor</option>
+        </select></label>
+        <label class="full">Your review <textarea name="review" rows="4" maxlength="1000" required></textarea></label>
+      </div>
+      <button class="button" type="submit">Publish my review</button>
+      <p class="review-status" role="status"></p>
+    </form>
+    <noscript>Enable JavaScript to read or write reviews.</noscript>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>BLAX Mobility Sdn Bhd</span><a href="#reviews">Write a review</a><a href="https://wa.me/60189708896">018-970 8896</a></footer>
+</body>
+</html>

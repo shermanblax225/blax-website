@@ -1,0 +1,81 @@
+:root{color-scheme:dark;--ink:#f7f3eb;--muted:#bbb7ae;--gold:#dfccaa;--line:#34312c;--base:#0a0a09}
+*{box-sizing:border-box}
+body{margin:0;background:var(--base);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+.wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+header,footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0}
+header{border-bottom:1px solid var(--line)}
+.brand{display:block;width:clamp(116px,15vw,180px);background:#000}
+.brand img{display:block;width:100%;height:auto}
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;padding:12px 17px;border:1px solid var(--gold);border-radius:5px;background:var(--gold);color:#17130e;font-weight:750;font-size:.9rem;line-height:1.4}
+.button:hover{background:#f4dcae;color:#17130e;border-color:#f4dcae}
+.outline{background:transparent;color:var(--ink);border-color:#615848}
+.hero{padding-block:clamp(32px,5vw,64px)}
+.eyebrow{color:var(--gold);font-size:.7rem;letter-spacing:.17em;font-weight:750;margin:0 0 14px}
+h1,h2,h3{line-height:1.04;margin:0}
+h1,h2{font-family:Georgia,serif;font-weight:400}
+h1{font-size:clamp(2.6rem,5vw,5rem);letter-spacing:-.06em}
+.intro{max-width:36ch;color:var(--muted);margin:20px 0 26px}
+.fleet{background:#191816;border-block:1px solid var(--line);padding-block:62px}
+h2{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.065em}
+.muted{color:var(--muted);max-width:58ch}
+.cars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+article{overflow:hidden;background:#111110;border:1px solid var(--line);border-radius:5px}
+.car-photo{display:block;width:100%;height:auto;aspect-ratio:508/400}
+.car-info{padding:24px}
+.luggage{color:var(--gold);font-size:.9rem;margin:12px 0 0}
+.luggage-note{color:var(--muted);margin:20px 0 0;max-width:70ch}
+.image-note{color:var(--muted);font-size:.76rem}
+article h3{font-size:clamp(1.55rem,2.5vw,2.2rem);letter-spacing:-.055em}
+dl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:25px 0}
+dt{font-size:.82rem;color:var(--muted)}
+dd{font-size:clamp(1.35rem,2.4vw,2rem);font-weight:800;margin:0;color:var(--gold)}
+article .button{width:100%}
+.booking{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-block:62px}
+.booking .button{flex-shrink:0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:850px){.car-info{padding:16px}}
+@media(max-width:720px){
+  .wrap{width:calc(100% - 32px)}
+  header{padding-block:12px}
+  .cars{grid-template-columns:1fr}
+  .hero{padding-block:32px}
+  .booking{align-items:flex-start;flex-direction:column}
+  .fleet,.booking{padding-block:40px}
+  .booking .button{width:100%}
+}
+.hero{position:relative;padding-block:clamp(44px,8vw,112px);background:radial-gradient(ellipse at 80% 50%,#231e16 0%,transparent 55%)}
+.hero h1{max-width:15ch;font-size:clamp(2.7rem,7.5vw,6.4rem)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.fleet{background:#151412}
+.booking{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);align-items:start;gap:clamp(24px,5vw,72px)}
+.booking h2{max-width:12ch}
+.contact{display:inline-block;margin-top:8px;text-decoration:underline;text-underline-offset:4px}
+.booking-form{background:#151412;border:1px solid var(--line);border-radius:6px;padding:clamp(16px,3vw,28px)}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.form-grid label{display:grid;align-content:start;gap:6px;font-size:.85rem;font-weight:650}
+.form-grid [hidden]{display:none}
+.full{grid-column:1/-1}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;min-width:0;min-height:44px;padding:8px 10px;border:1px solid #635c4e;border-radius:4px;background:#0d0d0c;color:var(--ink);font:400 1rem/1.4 system-ui,sans-serif}
+.form-grid textarea{resize:vertical}
+.form-grid :focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.fare-preview{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-block:22px 14px;border-top:1px solid var(--line);padding-top:16px}
+.fare-preview output{color:var(--gold);font-size:1.6rem;font-weight:750}
+.booking-form .button{width:100%;font-family:inherit;cursor:pointer}
+@media(max-width:760px){.booking{grid-template-columns:1fr}}
+@media(max-width:480px){.form-grid{grid-template-columns:1fr}}
+.reviews{border-top:1px solid var(--line)}
+.review-form .button{margin-top:18px}
+footer{flex-wrap:wrap}
+.review-column{min-width:0}
+.review-display{border:1px solid var(--line);border-radius:6px;padding:clamp(16px,3vw,28px);margin-bottom:16px}
+.review-display blockquote{margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:1.1rem}
+.review-display .muted{overflow-wrap:anywhere}
+.review-stars{color:var(--gold);letter-spacing:.12em;margin:0}
+.review-controls:not([hidden]){display:flex;gap:8px}
+.review-controls button{min-height:44px;padding:0 14px;border:1px solid var(--line);background:var(--base);color:var(--ink);border-radius:4px;cursor:pointer}
+.review-status:empty{display:none}
+.featured-reviews{padding-top:20px}
+.featured-reviews .review-display{margin-bottom:0}
