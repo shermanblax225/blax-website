@@ -5,21 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BLAX Mobility | KLIA Chauffeur Transfers</title>
   <script>
+    (() => {
     const key = 'blax-www-redirect';
     const now = Date.now();
-    let destination = 'https://www.blax.com.my/';
+    const destination = 'https://www.blax.com.my/';
     try {
       const previous = Number(sessionStorage.getItem(key));
       if (previous && now - previous < 15000) {
         sessionStorage.removeItem(key);
-        destination = 'https://blax-mobility-klia.sherman225.chatgpt.site/';
+        return;
       } else {
         sessionStorage.setItem(key, String(now));
       }
     } catch {
-      destination = 'https://blax-mobility-klia.sherman225.chatgpt.site/';
+      return;
     }
     window.location.replace(destination);
+    })();
   </script>
 </head>
 <body>
