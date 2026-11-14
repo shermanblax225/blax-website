@@ -4,9 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BLAX Mobility | KLIA Chauffeur Transfers</title>
-  <meta http-equiv="refresh" content="0; url=https://blax-mobility-klia.sherman225.chatgpt.site/">
+  <script>
+    const key = 'blax-www-redirect';
+    const now = Date.now();
+    let destination = 'https://www.blax.com.my/';
+    try {
+      const previous = Number(sessionStorage.getItem(key));
+      if (previous && now - previous < 15000) {
+        sessionStorage.removeItem(key);
+        destination = 'https://blax-mobility-klia.sherman225.chatgpt.site/';
+      } else {
+        sessionStorage.setItem(key, String(now));
+      }
+    } catch {
+      destination = 'https://blax-mobility-klia.sherman225.chatgpt.site/';
+    }
+    window.location.replace(destination);
+  </script>
 </head>
 <body>
-  <p><a href="https://blax-mobility-klia.sherman225.chatgpt.site/">Continue to BLAX Mobility airport transfers</a></p>
+  <p><a href="https://www.blax.com.my/">Continue to BLAX Mobility airport transfers</a></p>
 </body>
 </html>
