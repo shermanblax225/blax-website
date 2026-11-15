@@ -4,25 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BLAX Mobility | KLIA Chauffeur Transfers</title>
-  <script>
-    (() => {
-    const key = 'blax-www-redirect';
-    const now = Date.now();
-    const destination = 'https://www.blax.com.my/';
-    try {
-      const previous = Number(sessionStorage.getItem(key));
-      if (previous && now - previous < 15000) {
-        sessionStorage.removeItem(key);
-        return;
-      } else {
-        sessionStorage.setItem(key, String(now));
-      }
-    } catch {
-      return;
-    }
-    window.location.replace(destination);
-    })();
-  </script>
+  <link rel="canonical" href="https://www.blax.com.my/">
+  <meta http-equiv="refresh" content="0; url=https://www.blax.com.my/">
 </head>
 <body>
   <p><a href="https://www.blax.com.my/">Continue to BLAX Mobility airport transfers</a></p>
